@@ -14,7 +14,7 @@ def read_screen():
 
 def read_screen_2():
     # start = time.time()
-    img = pyscreenshot.grab()
+    img = pyscreenshot.grab(bbox=(0, 0, 1920, 1080))
     # print(time.time() - start)
     frame = numpy.array(img)
     return frame
